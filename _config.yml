@@ -5,7 +5,7 @@ description:         'I'm <a href="https://www.linkedin.com/in/yousuf-al-hinai" 
 url:                 https://yousufsaif.github.io
 baseurl:             ''
 paginate:            5
-permalink:           pretty
+permalink:           pretty #ugly
 
 # About/contact
 author:
