@@ -1,10 +1,10 @@
 # Setup
 title:               Yousuf's Blog
 tagline:             'Sharing what I know.'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'I'm <a href="https://www.linkedin.com/in/yousuf-al-hinai" target="_blank">Yousuf Al Hinai</a> , a lecturer at the IT Dept., <a href="http://twitter.com/UTASIbri" target="_blank">UTAS, Ibri</a>. I'm passionate about software & web development, databases, and AI.'
 url:                 https://yousufsaif.github.io
 baseurl:             ''
-paginate:            6
+paginate:            5
 permalink:           pretty
 
 # About/contact
