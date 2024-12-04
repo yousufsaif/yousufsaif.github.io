@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Version Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Download Exam Version</h2>
+    <input type="text" id="studentId" placeholder="Enter Student ID" />
+    <button onclick="downloadVersion()">Download</button>
+    <p id="message" style="color: red;"></p>
+</div>
+
+<script>
+    var url1 = "http://google.com";
+    var url2 = "http://microsoft.com";
+    const studentData = {
+        "72j2040": "url1",
+        "146s2211": "url2",
+        "16j2291": "url1",
+        "76j23149": "url2",
+        "72j21154": "url1",
+        "76s1940": "url2",
+        "2021593008": "url1",
+        "2021593028": "url2",
+        "2021593061": "url1",
+        "2021584089": "url2",
+        "2021593073": "url1",
+        "76s213": "url2",
+        "74j2117": "url1",
+        "76s2019": "url2",
+        "2021593066": "url1",
+        "76s211": "url2",
+        "76j2241": "url1",
+        "2021593077": "url2",
+        "2021593055": "url1",
+        "76s2127": "url2",
+        "76s218": "url1",
+        "76j2213": "url2",
+        "76s2132": "url1",
+        "146s22118": "url2",
+        "2020593062": "url1"
+    };
+
+    function downloadVersion() {
+        const studentId = document.getElementById('studentId').value.trim().toLowerCase();
+        const messageElement = document.getElementById('message');
+        if (studentData[studentId]) {
+            const url = studentData[studentId];
+            // Start download (for demo, using a placeholder URL)
+            window.location.href = url; // Replace 'url' with the actual download URL
+            messageElement.textContent = '';
+        } else {
+            messageElement.textContent = 'Student ID not found. Please try again.';
+        }
+    }
+</script>
+
+</body>
+</html>
